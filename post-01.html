@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title>Dogs</title>
+		<!-- Defines the scale of the page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified Bootsttrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- Custom styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!--jQuery library, required for botstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Defines a client-side script -->
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Include a google font -->
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,600italic,400italic,600,700' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+
+		<!-- WRAP is part of the sticky footer example -->
+		<!-- found at https://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html -->
+		<div class="wrap">
+			<header>
+				<!-- Found at https://getbootstrap.com/components/#navbar -->
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span>MENU</span>
+							</button>
+							<a class="navbar-brand" href="index.html">The happy Dog</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="https://en.wikipedia.org/wiki/Dog">Dogs.com</a></li>
+								<li><a href="http://www.boeing.com/space/">Boeing in the space</a></li>
+								<li><a href="http://www.boeing.com/principles/education.page">Boeing and the education</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="main-content">
+				<div class="container">
+
+					<!-- Bootstrap panel explained here -->
+					<!-- http://www.w3schools.com/bootstrap/bootstrap_panels.asp -->
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h2>Dogs</h2> 
+
+<img src="data:image/jpeg;base64,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" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="240" height="180" alt="Dog Breed Doesn't Affect Behavior, According to New Genetic Research |  Smart News| Smithsonian Magazine" data-atf="true" data-iml="695.1999999880791">
+
+							<p> They are beutiful, happy and funny?
+							They are Dogs! . </p>
+
+							<p>Dogs are perfekt for families with kids.</p>
+							
+							<blockquote>"They are fantastic!“</blockquote>
+							
+
+							<p>There are prety much dog breeders. You will find the right one. [not all breeders are good, some make dog fabrics]</p>
+						
+							<h3>Golden Retriever</h3>
+							<!-- copied from youtube.com -->
+							<!-- remember to change width from "560 to 100%" and height from 315 to 400 -->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/mpIgD_xLsYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Contact: please write to <a href="mailto:example@mail.com">example@mail.com</a>.</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
